@@ -32,10 +32,10 @@
 .DiaryItem .ourTeam, .DiaryItem .opponentTeam {
     display:flex;
     align-items: center;
-    gap: 5px;
+    font-size: 16px;
 }
 .DiaryItem .content_section .score {
-    margin: 0px 20px;
+    margin: 0px 15px;
     font-size: 22px;
 }
 
