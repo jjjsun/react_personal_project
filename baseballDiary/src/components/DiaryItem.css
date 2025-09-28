@@ -1,0 +1,106 @@
+.DiaryItem {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+}
+
+.DiaryItem:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.DiaryItem .info_section {
+    flex: 1;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 12px;
+    padding: 12px 16px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.DiaryItem .info_section:hover {
+    border-color: #acacac;
+}
+.DiaryItem .date_section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.DiaryItem .content_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 15px;
+
+}
+
+.DiaryItem .ourTeam, .DiaryItem .opponentTeam {
+    display:flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 6px;
+}
+.DiaryItem .content_section img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain; 
+}
+.DiaryItem .content_section .score {
+    margin: 0px 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* .DiaryItem .add_info_section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: "KBO_Gothic_light";
+    margin-bottom: 5px;
+} */
+
+.DiaryItem .add_info_section {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+    font-family: "KBO_Gothic_light";
+}
+
+
+.DiaryItem .button_section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.DiaryItem .button_section button {
+    /* padding: 8px 12px; */
+    border-radius: 8px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.DiaryItem .button_section button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.DiaryItem .button_section button:active {
+    transform: scale(0.95);
+}
