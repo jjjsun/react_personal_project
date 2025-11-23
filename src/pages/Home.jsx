@@ -46,9 +46,9 @@ const Home = () => {
                 rightChild={<Button text={">"} onClick={onIncreaseYear}/>}
                 title={
                     <div className="title_wrapper">
-                        <img src={getDoosanImage(2)} alt={"두산베어스 엠블럼"}/>
+                        <img src={getDoosanImage(1)} alt={"두산베어스 엠블럼"}/>
                         <span>{`${pivotDate.getFullYear()} 직관일기`}</span>
-                        <img src={getDoosanImage(2)} alt={"두산베어스 엠블럼"}/>
+                        <img src={getDoosanImage(1)} alt={"두산베어스 엠블럼"}/>
                     </div>
                 }
             />

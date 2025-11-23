@@ -10,7 +10,6 @@ const DiaryList = ({data}) => {
     const total = data.length;
     const wins = data.filter((item)=> item.ourScore > item.opponentScore).length;
     const draw = data.filter((item)=> Number(item.ourScore) === Number(item.opponentScore)).length;
-    const loses = total-(wins+draw);
     const winRate = total > 0 ? Math.round((wins/(total-draw)) * 100) : 0;
 
     const nav = useNavigate();
@@ -89,7 +88,6 @@ const DiaryList = ({data}) => {
                 </div>
                 <div className='diarylist_stats'>
                     <h2>직관 승률 : {winRate}%</h2>
-                    <p>{`${wins}승 ${draw}무 ${loses}패`}</p>
                 </div>
                 <div className='diarylist_actions'>
                     <Button text={"예매하러가기"} onClick={gotoTickLink}/>
